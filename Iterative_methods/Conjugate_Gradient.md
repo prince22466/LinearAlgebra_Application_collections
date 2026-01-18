@@ -32,11 +32,12 @@ And keep residuals r orthogonal with components p of previous iterations.
 Define:
 - Residual: rₖ = b − A xₖ, rₖ₊₁ = b − A xₖ₊₁, 
 - x update formula: xₖ₊₁ = xₖ + αₖ pₖ
-- p update formula: pₖ₊₁ = rₖ₊₁ + βₖ pₖ
+- p update formula: pₖ₊₁ = rₖ₊₁ + βₖ pₖ and p₀ = r₀
 
 Given Residual formulas,  
 rₖ₊₁ - rₖ = − A (xₖ₊₁ - xₖ)  
-#### rₖ₊₁ = rₖ − A αₖ pₖ   <<<--- this is the iteration process to reduce residual
+#### rₖ₊₁ = rₖ − A αₖ pₖ      <--- this is the iteration process to reduce residual  
+with αₖ = (rₖᵀ rₖ) / (pₖᵀ A pₖ), and βₖ = (rₖ₊₁ᵀ rₖ₊₁) / (rₖᵀ rₖ)
 
 ---
 

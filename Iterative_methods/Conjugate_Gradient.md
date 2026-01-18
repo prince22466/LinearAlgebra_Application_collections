@@ -34,9 +34,10 @@ Define:
 - x update formula: xₖ₊₁ = xₖ + αₖ pₖ
 - p update formula: pₖ₊₁ = rₖ₊₁ + βₖ pₖ
 
-Given Redisual formulas,
+Given Residual formulas,  
 rₖ₊₁ - rₖ = − A (xₖ₊₁ - xₖ)  
-rₖ₊₁ = rₖ − A αₖ pₖ <<<--- this is the iteration process to reduce residual  
+###rₖ₊₁ = rₖ − A αₖ pₖ <<<--- this is the iteration process to reduce residual
+
 ---
 
 ## Key Idea of Conjugate Gradient

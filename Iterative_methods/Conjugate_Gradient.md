@@ -25,7 +25,7 @@ And keep components p A-conjugate (A-orthogonal, aka uncorrelated with each othe
 And keep residuals r orthogonal with components p of previous iterations.  
 
 ---
-# Algo Summary
+# Algo Outline
 
 ## Residual and Gradient
 
@@ -50,40 +50,6 @@ pᵢᵀ A pⱼ = 0   for i ≠ j
 These directions are **A-conjugate (A-orthogonal)**.
 
 This is stronger than standard orthogonality and is crucial for finite-step convergence.
-
----
-
-## Algorithm Outline
-
-### Initialization
-Choose an initial guess x₀ (often x₀ = 0):
-
-- r₀ = b − A x₀
-- p₀ = r₀
-
----
-
-### Iteration (k = 0, 1, 2, …)
-
-1. **Step size**
-   
-   αₖ = (rₖᵀ rₖ) / (pₖᵀ A pₖ)
-
-2. **Update solution**
-   
-   xₖ₊₁ = xₖ + αₖ pₖ
-
-3. **Update residual**
-   
-   rₖ₊₁ = rₖ − αₖ A pₖ
-
-4. **Direction update coefficient**
-   
-   βₖ = (rₖ₊₁ᵀ rₖ₊₁) / (rₖᵀ rₖ)
-
-5. **New search direction**
-   
-   pₖ₊₁ = rₖ₊₁ + βₖ pₖ
 
 ---
 

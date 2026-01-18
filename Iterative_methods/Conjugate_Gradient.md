@@ -111,3 +111,5 @@ The Conjugate Gradient method:
 - pᵢᵀ A pⱼ = 0  for i ≠ j, how this is dervied?
 
 - pₖ₊₁ = rₖ₊₁ + βₖ pₖ, why p is updated in this manner ?
+
+- How A as a SPD matrix affect the effectiveness of CG ?

@@ -16,6 +16,7 @@ find x (approximate)
 No one wants to do inverse,
 No one wants to A decomposition (e.g., Cholesky decomposition)
 No one wants to do Gussian Elimination.
+Can only use matrix–vector products A p, only they are available.
 
 Iterative methods such as **Conjugate Gradient (CG)** exploit the SPD structure of A to achieve fast convergence with low memory usage.  
 
@@ -108,3 +109,8 @@ The Conjugate Gradient method:
 
 
 ## FAQ
+- αₖ = (rₖᵀ rₖ) / (pₖᵀ A pₖ), and βₖ = (rₖ₊₁ᵀ rₖ₊₁) / (rₖᵀ rₖ), how these are derived ?
+
+- pᵢᵀ A pⱼ = 0  for i ≠ j, how this is dervied?
+
+- pₖ₊₁ = rₖ₊₁ + βₖ pₖ, why p is updated in this manner ?

@@ -17,8 +17,10 @@ No one wants to do inverse,
 No one wants to A decomposition (e.g., Cholesky decomposition)
 No one wants to do Gussian Elimination.
 
-Iterative methods such as **Conjugate Gradient (CG)** exploit the SPD structure of A to achieve fast convergence with low memory usage.
-The idea is 
+Iterative methods such as **Conjugate Gradient (CG)** exploit the SPD structure of A to achieve fast convergence with low memory usage.  
+
+The idea is to take away a component p from r, here p is a vector, r is residual (r = b - A x).  
+
 ---
 
 ## Interpretation as an Optimization Problem

@@ -36,7 +36,7 @@ Define:
 
 Given Residual formulas,  
 rₖ₊₁ - rₖ = − A (xₖ₊₁ - xₖ)  
-###rₖ₊₁ = rₖ − A αₖ pₖ <<<--- this is the iteration process to reduce residual
+### rₖ₊₁ = rₖ − A αₖ pₖ <<<--- this is the iteration process to reduce residual
 
 ---
 

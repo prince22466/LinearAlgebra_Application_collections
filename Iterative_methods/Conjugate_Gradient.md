@@ -19,9 +19,10 @@ No one wants to do Gussian Elimination.
 
 Iterative methods such as **Conjugate Gradient (CG)** exploit the SPD structure of A to achieve fast convergence with low memory usage.  
 
-The idea is to take away a component p from r in each iteration, here p is a vector, r is residual (r = b - A x). And finally iteration stops when |r²| become 0 or reach certain criterion. 
+The idea is to take away a component p from r in each iteration, here p is a vector, r is residual (r = b - A x). And finally iteration stops when |r²| become 0 or reach certain criterion.  
 And keep components p A-conjugate (A-orthogonal, aka uncorrelated with each other under A).  
 And keep residuals r orthogonal with components p of previous iterations.  
+
 ---
 
 ## Interpretation as an Optimization Problem

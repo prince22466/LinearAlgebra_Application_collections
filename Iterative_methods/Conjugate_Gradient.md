@@ -25,27 +25,18 @@ And keep components p A-conjugate (A-orthogonal, aka uncorrelated with each othe
 And keep residuals r orthogonal with components p of previous iterations.  
 
 ---
-
-## Interpretation as an Optimization Problem
-
-Solving A x = b is equivalent to minimizing the quadratic function
-
-f(x) = ½ xᵀ A x − bᵀ x
-
-Properties:
-- f is strictly convex because A is SPD,
-- The unique minimizer x* satisfies ∇f(x*) = 0 ⇔ A x* = b.
-
----
+# Algo Summary
 
 ## Residual and Gradient
 
 Define:
-- Residual: rₖ = b − A xₖ
-- Gradient: ∇f(xₖ) = −rₖ
+- Residual: rₖ = b − A xₖ, rₖ₊₁ = b − A xₖ₊₁, 
+- x update formula: xₖ₊₁ = xₖ + αₖ pₖ
+- p update formula: pₖ₊₁ = rₖ₊₁ + βₖ pₖ
 
-Thus, the residual is the **negative gradient** of the objective function.
-
+Given Redisual formulas,
+rₖ₊₁ - rₖ = − A (xₖ₊₁ - xₖ)  
+rₖ₊₁ = rₖ − A αₖ pₖ <<<--- this is the iteration process to reduce residual  
 ---
 
 ## Key Idea of Conjugate Gradient

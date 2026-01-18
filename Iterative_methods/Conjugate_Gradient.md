@@ -113,3 +113,5 @@ The Conjugate Gradient method:
 - pₖ₊₁ = rₖ₊₁ + βₖ pₖ, why p is updated in this manner ?
 
 - How A as a SPD matrix affect the effectiveness of CG ?
+ 
+- Why CG converges in at most n steps in exact arithmetic ?

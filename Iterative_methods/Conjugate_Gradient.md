@@ -1,4 +1,4 @@
-# Conjugate Gradient (CG) Method — Numerical Iterative Methods
+# Conjugate Gradient (CG) — Numerical Iterative Methods
 
 ## Problem Setting
 

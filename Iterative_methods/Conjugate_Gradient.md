@@ -11,13 +11,14 @@ where:
 - b ∈ ℝⁿ,
 - x ∈ ℝⁿ is unknown.
 
-Direct methods (e.g., Cholesky decomposition) are often avoided for large-scale problems due to:
-- High memory cost,
-- O(n³) computational complexity,
-- Poor scalability.
+find x (approximate)
+
+No one wants to do inverse,
+No one wants to A decomposition (e.g., Cholesky decomposition)
+No one wants to do Gussian Elimination.
 
 Iterative methods such as **Conjugate Gradient (CG)** exploit the SPD structure of A to achieve fast convergence with low memory usage.
-
+The idea is 
 ---
 
 ## Interpretation as an Optimization Problem

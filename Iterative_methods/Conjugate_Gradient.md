@@ -109,7 +109,7 @@ The Conjugate Gradient method:
 
 
 ## FAQ
-- αₖ = (rₖᵀ rₖ) / (pₖᵀ A pₖ), and βₖ = (rₖ₊₁ᵀ rₖ₊₁) / (rₖᵀ rₖ), how these are derived ?
+- αₖ = (rₖᵀ rₖ) / (pₖᵀ A pₖ), and βₖ = (rₖ₊₁ᵀ rₖ₊₁) / (rₖᵀ rₖ), how these are derived ?  
   for αₖ = (rₖᵀ rₖ) / (pₖᵀ A pₖ),  
   it is from rₖ₊₁ ⟂ pₖ = 0 (r doesnt have components in previous iteration),  
   rₖ₊₁ = rₖ − αₖ A pₖ  
@@ -120,6 +120,13 @@ The Conjugate Gradient method:
   because pₖ = rₖ + βₖ₋₁ pₖ₋₁, dot product with rₖ becomes, pₖᵀ rₖ = rₖᵀ rₖ + βₖ₋₁ pₖ₋₁ᵀ rₖ,  
   then pₖᵀ rₖ = rₖᵀ rₖ since pₖ₋₁ᵀ rₖ = 0.  
   Thus αₖ = (pₖᵀ rₖ) / (pₖᵀ A pₖ) = (rₖᵀ rₖ) / (pₖᵀ A pₖ)  
+
+  for βₖ = (rₖ₊₁ᵀ rₖ₊₁) / (rₖᵀ rₖ),  
+  it is from pₖ₊₁ ⟂ A pₖ = 0 (p is A-orthogonal, aka, pᵢᵀ A pⱼ = 0  for i ≠ j),  
+  pₖ₊₁ = rₖ₊₁ − βₖ pₖ  
+  pₖᵀ A pₖ₊₁ = pₖᵀ A rₖ₊₁ − βₖ pₖᵀ A pₖ  
+  0 = pₖᵀ A rₖ₊₁ − βₖ pₖᵀ A pₖ  
+  βₖ = - (pₖᵀ A rₖ₊₁) / (pₖᵀ A pₖ)  
 
 - what does it mean one vector r doesnt have component p ?
 

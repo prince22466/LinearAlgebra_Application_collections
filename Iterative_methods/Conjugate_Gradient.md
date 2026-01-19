@@ -54,13 +54,17 @@ This is stronger than standard orthogonality and is crucial for finite-step conv
 
 ---
 
-## Orthogonality Properties
+## Orthogonality Properties in CG
 
-- Residuals are mutually orthogonal:
+- Residuals are orthogonal to previous components (explicit requirement):
+  
+  pᵢᵀ rⱼ = 0  for i < j
+  
+- Residuals are mutually orthogonal (implicit):
   
   rᵢᵀ rⱼ = 0  for i ≠ j
 
-- Search directions are A-conjugate:
+- Search directions are A-conjugate (implicit):
   
   pᵢᵀ A pⱼ = 0  for i ≠ j
 

@@ -130,15 +130,15 @@ The Conjugate Gradient method:
   pₖ₊₁ = rₖ₊₁ − βₖ pₖ  
   pₖᵀ A pₖ₊₁ = pₖᵀ A rₖ₊₁ − βₖ pₖᵀ A pₖ  
   0 = pₖᵀ A rₖ₊₁ − βₖ pₖᵀ A pₖ  
-  βₖ = - (pₖᵀ A rₖ₊₁) / (pₖᵀ A pₖ)  <---- this is the conceptally correct one
+  βₖ = - (pₖᵀ A rₖ₊₁) / (pₖᵀ A pₖ)  <---- this is the conceptally correct one  
 
   since rₖ₊₁ ⟂ rₖ = 0,  
   with rₖ₊₁ = rₖ − A αₖ pₖ  
-  rₖ₊₁ᵀ rₖ₊₁ = rₖ₊₁ᵀ rₖ - αₖ rₖ₊₁ᵀ A pₖ
-  rₖ₊₁ᵀ A pₖ = (rₖ₊₁ᵀ rₖ₊₁) / αₖ
-  then, βₖ = (rₖ₊₁ᵀ rₖ₊₁) / αₖ (pₖᵀ A pₖ), A is symmetric so rₖ₊₁ᵀ A pₖ == pₖᵀ A rₖ₊₁,
-  given the case above, αₖ = (rₖᵀ rₖ) / (pₖᵀ A pₖ),
-  finally, βₖ = (rₖ₊₁ᵀ rₖ₊₁) / (rₖᵀ rₖ) <---- this is for computation, it only has vector multiplication   
+  rₖ₊₁ᵀ rₖ₊₁ = rₖ₊₁ᵀ rₖ - αₖ rₖ₊₁ᵀ A pₖ  
+  rₖ₊₁ᵀ A pₖ = (rₖ₊₁ᵀ rₖ₊₁) / αₖ  
+  then, βₖ = (rₖ₊₁ᵀ rₖ₊₁) / αₖ (pₖᵀ A pₖ), A is symmetric so rₖ₊₁ᵀ A pₖ == pₖᵀ A rₖ₊₁,  
+  given the case above, αₖ = (rₖᵀ rₖ) / (pₖᵀ A pₖ),  
+  finally, βₖ = (rₖ₊₁ᵀ rₖ₊₁) / (rₖᵀ rₖ) <---- this is for computation, it only has vector multiplication  
 
 - what does it mean, one vector r doesnt have component p ?
 
@@ -149,5 +149,7 @@ The Conjugate Gradient method:
 - residuals are mutually orthogonal (aka, rᵢᵀ rⱼ = 0  for i ≠ j), how it this derived ?
   
 - How A as a SPD matrix affect the effectiveness of CG ?
+  if A is not symmetric, then pᵢᵀ A pⱼ != pⱼᵀ A pᵢ .
+  if A is not positive definite, 
  
 - Why CG converges in at most n steps in exact arithmetic ?

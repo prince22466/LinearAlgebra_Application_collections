@@ -115,7 +115,7 @@ The Conjugate Gradient method:
 ## FAQ
 - αₖ = (rₖᵀ rₖ) / (pₖᵀ A pₖ), and βₖ = (rₖ₊₁ᵀ rₖ₊₁) / (rₖᵀ rₖ), how these are derived ?
   <details>
-  <summary>Click to show details</summary>
+  <summary>Click to show</summary>
   for αₖ = (rₖᵀ rₖ) / (pₖᵀ A pₖ),  
   it is from rₖ₊₁ ⟂ pₖ = 0 (r doesnt have components in previous iteration),  
   rₖ₊₁ = rₖ − αₖ A pₖ  
@@ -141,7 +141,6 @@ The Conjugate Gradient method:
   then, βₖ = (rₖ₊₁ᵀ rₖ₊₁) / αₖ (pₖᵀ A pₖ), A is symmetric so rₖ₊₁ᵀ A pₖ == pₖᵀ A rₖ₊₁,  
   given the case above, αₖ = (rₖᵀ rₖ) / (pₖᵀ A pₖ),  
   finally, βₖ = (rₖ₊₁ᵀ rₖ₊₁) / (rₖᵀ rₖ) <---- this is for computation, it only has vector multiplication  
-<details>
 
 - what does it mean, one vector r doesnt have component p ?
 

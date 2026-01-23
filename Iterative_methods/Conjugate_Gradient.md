@@ -13,10 +13,10 @@ where:
 
 find x (approximate)
 
-No one wants to do inverse,
+No one wants to inverse matrix,
 No one wants to A decomposition (e.g., Cholesky decomposition)
-No one wants to do Gussian Elimination.
-Can only use matrix–vector products A p, only they are available.
+No one wants to do Gussian Elimination (complicated).
+Only doing matrix–vector products is much easier, if possible.
 
 Iterative methods such as **Conjugate Gradient (CG)** exploit the SPD structure of A to achieve fast convergence with low memory usage.  
 
@@ -145,6 +145,13 @@ The Conjugate Gradient method:
 - what does it mean, one vector r doesnt have component p ?
 
 - pᵢᵀ A pⱼ = 0  for i ≠ j, how this is dervied?
+  <details>
+  <summary>Click to show</summary>
+  it is from rₖ₊₁ ⟂ pₖ = 0,  
+  rₖ₊₁ = rₖ − αₖ A pₖ  
+  pₖ₋₁ᵀ rₖ₊₁ = pₖ₋₁ᵀ rₖ − αₖ pₖ₋₁ᵀ A pₖ  
+  0 = 0 − αₖ pₖ₋₁ᵀ A pₖ  
+  the equation holds with certainty, when pₖ₋₁ᵀ A pₖ = 0  
 
 - pₖ₊₁ = rₖ₊₁ + βₖ pₖ, why p is updated in this manner ?
 

@@ -151,12 +151,19 @@ The Conjugate Gradient method:
   rₖ₊₁ = rₖ − αₖ A pₖ  
   pₖ₋₁ᵀ rₖ₊₁ = pₖ₋₁ᵀ rₖ − αₖ pₖ₋₁ᵀ A pₖ  
   0 = 0 − αₖ pₖ₋₁ᵀ A pₖ  
-  the equation holds with certainty, when pₖ₋₁ᵀ A pₖ = 0  
+  the equation holds with certainty, when pₖ₋₁ᵀ A pₖ = 0
 
 - pₖ₊₁ = rₖ₊₁ + βₖ pₖ, why p is updated in this manner ?
 
 - residuals are mutually orthogonal (aka, rᵢᵀ rⱼ = 0  for i ≠ j), how it this derived ?
-  
+  <details>
+  <summary>Click to show</summary>
+  it is from pᵢᵀ rⱼ = 0,
+  pₖ₋₁ᵀ rₖ = 0  
+  rₖᵀ pₖ₋₁ = 0  
+  rₖᵀ (rₖ₋₁ + βₖ₋ pₖ₋) = 0  
+  rₖᵀ rₖ₋₁ + βₖ₋ rₖᵀ pₖ₋) = 0  
+
 - How A as a SPD matrix affect the effectiveness of CG ?
   if A is not symmetric, then pᵢᵀ A pⱼ != pⱼᵀ A pᵢ .
   if A is not positive definite, 

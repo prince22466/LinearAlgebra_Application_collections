@@ -113,7 +113,7 @@ The Conjugate Gradient method:
 
 
 ## FAQ
-- αₖ = (rₖᵀ rₖ) / (pₖᵀ A pₖ), and βₖ = (rₖ₊₁ᵀ rₖ₊₁) / (rₖᵀ rₖ), how these are derived ?
+- αₖ = (rₖᵀ rₖ) / (pₖᵀ A pₖ), and βₖ = (rₖ₊₁ᵀ rₖ₊₁) / (rₖᵀ rₖ), how these are derived ?  
   <details>
   <summary>Click to show</summary>
   for αₖ = (rₖᵀ rₖ) / (pₖᵀ A pₖ),  
@@ -144,7 +144,7 @@ The Conjugate Gradient method:
 
 - what does it mean, one vector r doesnt have component p ?
 
-- pᵢᵀ A pⱼ = 0  for i ≠ j, how this is dervied?
+- pᵢᵀ A pⱼ = 0  for i ≠ j, how this is dervied?  
   <details>
   <summary>Click to show</summary>
   it is from rₖ₊₁ ⟂ pₖ = 0,  
@@ -155,16 +155,19 @@ The Conjugate Gradient method:
 
 - pₖ₊₁ = rₖ₊₁ + βₖ pₖ, why p is updated in this manner ?
 
-- residuals are mutually orthogonal (aka, rᵢᵀ rⱼ = 0  for i ≠ j), how it this derived ?
+- residuals are mutually orthogonal (aka, rᵢᵀ rⱼ = 0  for i ≠ j), how it this derived ?  
   <details>
   <summary>Click to show</summary>
   it is from pᵢᵀ rⱼ = 0,
   pₖ₋₁ᵀ rₖ = 0  
   rₖᵀ pₖ₋₁ = 0  
-  rₖᵀ (rₖ₋₁ + βₖ₋ pₖ₋) = 0  
-  rₖᵀ rₖ₋₁ + βₖ₋ rₖᵀ pₖ₋) = 0  
+  rₖᵀ (rₖ₋₁ + βₖ₋₂ pₖ₋₂) = 0  
+  rₖᵀ rₖ₋₁ + βₖ₋₂ rₖᵀ pₖ₋₂ = 0  
+  rₖᵀ pₖ₋₂ = 0, then rₖᵀ rₖ₋₁ = 0
 
 - How A as a SPD matrix affect the effectiveness of CG ?
+  <details>
+  <summary>Click to show</summary>
   if A is not symmetric, then pᵢᵀ A pⱼ != pⱼᵀ A pᵢ .
   if A is not positive definite, 
  

@@ -147,10 +147,14 @@ The Conjugate Gradient method:
 - pᵢᵀ A pⱼ = 0  for i ≠ j, how this is dervied?  
   <details>
   <summary>Click to show</summary>
-  it is from rₖ₊₁ ⟂ pₖ = 0,  
-  rₖ₊₁ = rₖ − αₖ A pₖ  
-  pₖ₋₁ᵀ rₖ₊₁ = pₖ₋₁ᵀ rₖ − αₖ pₖ₋₁ᵀ A pₖ  
-  0 = 0 − αₖ pₖ₋₁ᵀ A pₖ  
+  it is from rₖ₊₁ ⟂ pₖ = 0,
+    
+  rₖ₊₁ = rₖ − αₖ A pₖ
+  
+  pₖ₋₁ᵀ rₖ₊₁ = pₖ₋₁ᵀ rₖ − αₖ pₖ₋₁ᵀ A pₖ
+  
+  0 = 0 − αₖ pₖ₋₁ᵀ A pₖ
+  
   the equation holds with certainty, when pₖ₋₁ᵀ A pₖ = 0
 
 - pₖ₊₁ = rₖ₊₁ + βₖ pₖ, why p is updated in this manner ?
@@ -159,16 +163,22 @@ The Conjugate Gradient method:
   <details>
   <summary>Click to show</summary>
   it is from pᵢᵀ rⱼ = 0,
-  pₖ₋₁ᵀ rₖ = 0  
-  rₖᵀ pₖ₋₁ = 0  
-  rₖᵀ (rₖ₋₁ + βₖ₋₂ pₖ₋₂) = 0  
-  rₖᵀ rₖ₋₁ + βₖ₋₂ rₖᵀ pₖ₋₂ = 0  
+    
+  pₖ₋₁ᵀ rₖ = 0
+  
+  rₖᵀ pₖ₋₁ = 0
+  
+  rₖᵀ (rₖ₋₁ + βₖ₋₂ pₖ₋₂) = 0
+  
+  rₖᵀ rₖ₋₁ + βₖ₋₂ rₖᵀ pₖ₋₂ = 0
+  
   rₖᵀ pₖ₋₂ = 0, then rₖᵀ rₖ₋₁ = 0
 
 - How A as a SPD matrix affect the effectiveness of CG ?
   <details>
   <summary>Click to show</summary>
   if A is not symmetric, then pᵢᵀ A pⱼ != pⱼᵀ A pᵢ .
-  if A is not positive definite, 
+    
+  if A is not positive definite, pᵢᵀ A pⱼ
  
 - Why CG converges in at most n steps in exact arithmetic ?

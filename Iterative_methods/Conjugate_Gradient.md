@@ -143,6 +143,17 @@ The Conjugate Gradient method:
   finally, βₖ = (rₖ₊₁ᵀ rₖ₊₁) / (rₖᵀ rₖ) <---- this is for computation, it only has vector multiplication  
 
 - what does it mean, one vector r doesnt have component p ?
+  <details>
+  <summary>Click to show</summary>
+  Let r and p be vectors, p ≠ 0. r can be decomposed into 2 parts of p,
+  
+  r = (pᵀr / pᵀp) p + ( r − (pᵀr / pᵀp) p )
+  
+  where:
+  • (pᵀr / pᵀp) p is the component of r,   
+  • r − (pᵀr / pᵀp) p is the component of r orthogonal to p
+
+  for (pᵀr / pᵀp) p to be zero, then pᵀr = 0, and it means r doesnt have component of p.
 
 - pᵢᵀ A pⱼ = 0  for i ≠ j, how this is dervied?  
   <details>

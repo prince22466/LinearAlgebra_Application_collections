@@ -145,15 +145,16 @@ The Conjugate Gradient method:
 - what does it mean, one vector r doesnt have component p ?
   <details>
   <summary>Click to show</summary>
-  Let r and p be vectors, p ≠ 0. r can be decomposed into 2 parts of p,
+  Let r and p be vectors, p ≠ 0. r can be decomposed into 2 components of p,
   
-  r = (pᵀr / pᵀp) p + ( r − (pᵀr / pᵀp) p )
+  r = (pᵀr / pᵀp) p + ( r − (pᵀr / pᵀp) ) p
   
   where:
+  
   • (pᵀr / pᵀp) p is the component of r,   
   • r − (pᵀr / pᵀp) p is the component of r orthogonal to p
 
-  for (pᵀr / pᵀp) p to be zero, then pᵀr = 0, and it means r doesnt have component of p.
+  for (pᵀr / pᵀp) p to be zero, pᵀr = 0 is required, and it means r doesnt have component of p.
 
 - pᵢᵀ A pⱼ = 0  for i ≠ j, how this is dervied?  
   <details>
@@ -169,6 +170,15 @@ The Conjugate Gradient method:
   the equation holds with certainty, when pₖ₋₁ᵀ A pₖ = 0
 
 - pₖ₊₁ = rₖ₊₁ + βₖ pₖ, why p is updated in this manner ?
+  <details>
+  <summary>Click to show</summary>
+  intuitively, in the step to update pₖ₊₁, the available info is pₖ, pₖ₋₁, ...p₀, rₖ₊₁, rₖ, ...r₀
+
+  the way to update pₖ₊₁ will be constrained to use the linear combination of these elements and their polynomials, such as pₖ, pₖ², pₖ₋₁², rₖ₊₁, rₖ²,    rₖ₋₁².
+
+  amony which rₖ₊₁ + scaler* pₖ is the simplest one, and it works.
+
+  This is the general form in iterative methods not just in CG.
 
 - residuals are mutually orthogonal (aka, rᵢᵀ rⱼ = 0  for i ≠ j), how it this derived ?  
   <details>

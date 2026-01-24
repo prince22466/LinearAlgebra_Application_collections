@@ -14,7 +14,7 @@ where:
 find x (approximate)
 
 No one wants to inverse matrix,
-No one wants to A decomposition (e.g., Cholesky decomposition)
+No one wants to do A decomposition (e.g., Cholesky decomposition)
 No one wants to do Gussian Elimination (complicated).
 Only doing matrix–vector products is much easier, if possible.
 
@@ -205,3 +205,6 @@ The Conjugate Gradient method:
   then αₖ = (rₖᵀ rₖ) / (pₖᵀ A pₖ) cannot have consistent sign during iterations, which makes process of solution searching unstable.
  
 - Why CG converges in at most n steps in exact arithmetic ?
+  <details>
+  <summary>Click to show</summary>
+  A is SPD with size nxn, then it can decompose to 

@@ -174,11 +174,13 @@ The Conjugate Gradient method:
   
   rₖᵀ pₖ₋₂ = 0, then rₖᵀ rₖ₋₁ = 0
 
-- How A as a SPD matrix affect the effectiveness of CG ?
+- How A as a SPD(symmetric positive definite) matrix affect the effectiveness of CG ?
   <details>
   <summary>Click to show</summary>
   if A is not symmetric, then pᵢᵀ A pⱼ != pⱼᵀ A pᵢ .
     
-  if A is not positive definite, pᵢᵀ A pⱼ
+  And mostly importantly, if A is not SPD, pᵢᵀ A pᵢ will not garantee to be positive,
+
+  then αₖ = (rₖᵀ rₖ) / (pₖᵀ A pₖ) cannot have consistent sign during iterations, which makes process of solution searching unstable.
  
 - Why CG converges in at most n steps in exact arithmetic ?

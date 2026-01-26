@@ -204,7 +204,10 @@ The Conjugate Gradient method:
 
   then αₖ = (rₖᵀ rₖ) / (pₖᵀ A pₖ) cannot have consistent sign during iterations, which makes process of solution searching unstable.
  
-- Why CG converges in at most n steps in exact arithmetic ?
+- Why CG converges in at most n steps in exact arithmetic for A with size of nxn ?
   <details>
   <summary>Click to show</summary>
-  A is SPD with size nxn, then it can decompose to 
+  with the example of n = 3,  
+  as the result of algo, r₀ ⟂ r₁ ⟂ r₂,  
+  linear algebra fact, in ℝ³, it only has the sets of exact 3 orthogonal non-zero vectors.  
+  Which means r₃ = 0

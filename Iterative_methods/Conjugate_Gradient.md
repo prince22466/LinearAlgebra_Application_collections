@@ -207,7 +207,10 @@ The Conjugate Gradient method:
 - Why CG converges in at most n steps in exact arithmetic for A with size of nxn ?
   <details>
   <summary>Click to show</summary>
-  with the example of n = 3,  
-  as the result of algo, r₀ ⟂ r₁ ⟂ r₂,  
-  linear algebra fact, in ℝ³, it only has the sets of exact 3 orthogonal non-zero vectors.  
+  with the example of n = 3,
+  
+  as the result of algo, r₀ ⟂ r₁ ⟂ r₂,
+
+  linear algebra fact, in ℝ³, it only has the sets of exact 3 orthogonal non-zero vectors.
+
   Which means r₃ = 0

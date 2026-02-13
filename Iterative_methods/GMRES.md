@@ -21,6 +21,7 @@ For large systems:
 
 When A is not SPD, Conjugate Gradient cannot be used.
 **GMRES works for general matrices.**
+GMRES relys heavily on ***Arnold Decomposition*** which is to project a large matrix(high dim) to smaller ones(low dim), check out more about Arnold Decomposition [here](https://en.wikipedia.org/wiki/Arnoldi_iteration "Arnoldi method explanation")
 
 ---
 
@@ -34,10 +35,10 @@ And then How?
 * x can be represented as a linear combination of orthognormal vectors(v₁, v₂, ⋯, vₙ) in Vₙ , x = y₁v₁ + y₂v₂ + ⋯ + yₙvₙ.
 * given x₀(initial guess, usually zero), x = x₀ + y₁v₁ + y₂v₂ + ⋯ + yₙvₙ. It seems starting from x₀ and then adding orthognormal vectors, we can finally reach x from x₀.
 * then comes the iteration formular xₖ = x₀ + Vₖ Yₖ, where Vₖ has k orthognormal vectors, Yₖ is a vector k scalers.
-* hence we can represent rₖ = b − A xₖ => rₖ = r₀ − A Vₖ yₖ , r₀ = b - A x₀.
-* with Arnold Decomposition, rₖ = r₀ − Vₖ₊₁ Hₖ₊₁,ₖ yₖ, A is gone, Hₖ₊₁,ₖ is hessenberg matrix.
-* if we set up v₁ = r₀ / β , β = ∥r₀∥, then v₁ = e₁ Vₖ₊₁ , e₁ is [1,0,0,0...] .
-* then rₖ = β e₁ Vₖ₊₁ − Vₖ₊₁ Hₖ₊₁,ₖ yₖ =  Vₖ₊₁ (β e₁ - Hₖ₊₁,ₖ yₖ) , further, ∥rₖ∥ = ∥β e₁ - Hₖ₊₁,ₖ yₖ∥, because ∥Vₖ₊₁∥ =1, 
+* hence we can represent rₖ = b − A xₖ => rₖ = r₀ − A Vₖ Yₖ , r₀ = b - A x₀.
+* with ***Arnold Decomposition***, rₖ = r₀ − Vₖ₊₁ Hₖ₊₁,ₖ Yₖ, A is gone, Hₖ₊₁,ₖ is hessenberg matrix with size (k+1)xk.
+* if we set up v₁ = r₀ / β , β = ∥r₀∥, then v₁ = e₁ Vₖ₊₁ , where e₁ is [1,0,0,0...] .
+* then rₖ = β e₁ Vₖ₊₁ − Vₖ₊₁ Hₖ₊₁,ₖ yₖ =  Vₖ₊₁ (β e₁ - Hₖ₊₁,ₖ Yₖ) , further, ∥rₖ∥ = ∥β e₁ - Hₖ₊₁,ₖ yₖ∥, because ∥Vₖ₊₁∥ =1 .
 * so Now, we need to find k(much smaller than n) and xₖ, that make ∥rₖ∥=  small enough
 
 Each iteration:

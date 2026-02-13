@@ -31,15 +31,15 @@ Instead of find the x, we
 * find xₖ that **makes the residual norm small enough** by iteration
 
 And then How?
-* x(solution) is ℝⁿ, then x = Vₙ Yₙ, Vₙ is a span of ℝⁿ, each vectos in Vₙ are orthognormal to each other , Yₙ is a vector of n scalers.
-* x can be represented as a linear combination of orthognormal vectors(v₁, v₂, ⋯, vₙ) in Vₙ , x = y₁v₁ + y₂v₂ + ⋯ + yₙvₙ.
-* given x₀(initial guess, usually zero), x = x₀ + y₁v₁ + y₂v₂ + ⋯ + yₙvₙ. It seems starting from x₀ and then adding orthognormal vectors, we can finally reach x from x₀.
-* then comes the iteration formular xₖ = x₀ + Vₖ Yₖ, where Vₖ has k orthognormal vectors, Yₖ is a vector k scalers.
-* hence we can represent rₖ = b − A xₖ => rₖ = r₀ − A Vₖ Yₖ , r₀ = b - A x₀.
-* with ***Arnold Decomposition***, rₖ = r₀ − Vₖ₊₁ Hₖ₊₁,ₖ Yₖ, A is gone, Hₖ₊₁,ₖ is hessenberg matrix with size (k+1)xk.
-* if we set up v₁ = r₀ / β , β = ∥r₀∥, then v₁ = e₁ Vₖ₊₁ , where e₁ is [1,0,0,0...] .
-* then rₖ = β e₁ Vₖ₊₁ − Vₖ₊₁ Hₖ₊₁,ₖ yₖ =  Vₖ₊₁ (β e₁ - Hₖ₊₁,ₖ Yₖ) , further, ∥rₖ∥ = ∥β e₁ - Hₖ₊₁,ₖ yₖ∥, because ∥Vₖ₊₁∥ =1 .
-* so Now, we need to find k(much smaller than n) and xₖ, that make ∥rₖ∥=  small enough
+* x(solution) is ℝⁿ, then x = Vₙ Yₙ , Vₙ is a span of ℝⁿ , each vectos in Vₙ are orthognormal to each other , Yₙ is a vector of n scalers.
+* x can be represented as a linear combination of orthognormal vectors(v₁ , v₂ , ⋯ , vₙ) in Vₙ , x = y₁v₁ + y₂v₂ + ⋯ + yₙvₙ.
+* given x₀(initial guess , usually zero), x = x₀ + y₁v₁ + y₂v₂ + ⋯ + yₙvₙ . It seems starting from x₀ and then adding orthognormal vectors , we can finally reach x from x₀ .
+* then comes the iteration formular xₖ = x₀ + Vₖ Yₖ , where Vₖ has k orthognormal vectors , Yₖ is a vector k scalers.
+* hence we can represent rₖ = b − A xₖ => rₖ = r₀ − A Vₖ Yₖ , r₀ = b - A x₀ .
+* with ***Arnold Decomposition*** , rₖ = r₀ − Vₖ₊₁ Hₖ₊₁,ₖ Yₖ, A is gone , Hₖ₊₁, ₖ is hessenberg matrix with size (k+1)xk.
+* if we set up v₁ = r₀ / β , β = ∥r₀∥ , then v₁ = e₁ Vₖ₊₁ , where e₁ is [1,0,0,0...] .
+* then rₖ = β e₁ Vₖ₊₁ − Vₖ₊₁ Hₖ₊₁,ₖ yₖ =  Vₖ₊₁ (β e₁ - Hₖ₊₁,ₖ Yₖ) , further, ∥rₖ∥ = ∥β e₁ - Hₖ₊₁,ₖ yₖ∥ , because ∥Vₖ₊₁∥ =1 .
+* so Now, we need to find k(much smaller than n) and xₖ , that make ∥rₖ∥=  small enough
 
 
 ---

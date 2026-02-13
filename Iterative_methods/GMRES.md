@@ -10,16 +10,13 @@ A x = b
 
 where
 
-* A ∈ ℝⁿˣⁿ is **large**, possibly **non‑symmetric**, not necessarily SPD
+* A ∈ ℝⁿˣⁿ is **large**, possibly **non‑SPE**
 * b ∈ ℝⁿ
 * x ∈ ℝⁿ is unknown
 * goal: find x approximately
 
 For large systems:
-
-* matrix inverse is expensive
-* LU / QR / Cholesky factorization is expensive
-* Gaussian elimination is expensive
+* matrix inverse, LU / QR / Cholesky factorization, Gaussian elimination are expensive
 
 Matrix–vector products (A·v) are cheap.
 
@@ -32,11 +29,8 @@ When A is not SPD, Conjugate Gradient cannot be used.
 
 ## Main idea
 
-Instead of solving in the full space ℝⁿ, we
-
-• build an orthonormal basis Vₖ
-• search only inside that small subspace
-• choose the vector that **minimizes the residual norm**
+Instead of find the x, we
+• find xₖ that **makes the residual norm small enough** by iteration
 
 Each iteration:
 
@@ -51,7 +45,7 @@ So:
 large problem → small least squares
 
 ---
-
+## Algo Outline
 ## Parameterization of the iterate
 
 xₖ = x₀ + Vₖ yₖ

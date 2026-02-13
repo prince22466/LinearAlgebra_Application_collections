@@ -10,7 +10,7 @@ A x = b
 
 where
 
-* A ∈ ℝⁿˣⁿ is **large**, possibly **non‑SPE**
+* A ∈ ℝⁿˣⁿ is **large**, possibly **non‑SPD**
 * b ∈ ℝⁿ
 * x ∈ ℝⁿ is unknown
 * goal: find x approximately

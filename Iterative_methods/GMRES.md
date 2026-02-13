@@ -41,6 +41,10 @@ And then How?
 * then rₖ = β e₁ Vₖ₊₁ − Vₖ₊₁ Hₖ₊₁,ₖ yₖ =  Vₖ₊₁ (β e₁ - Hₖ₊₁,ₖ Yₖ) , further, ∥rₖ∥ = ∥β e₁ - Hₖ₊₁,ₖ yₖ∥, because ∥Vₖ₊₁∥ =1 .
 * so Now, we need to find k(much smaller than n) and xₖ, that make ∥rₖ∥=  small enough
 
+
+---
+## Algo Outline
+
 Each iteration:
 
 1. add one new direction
@@ -53,8 +57,6 @@ So:
 
 large problem → small least squares
 
----
-## Algo Outline
 ## Parameterization of the iterate
 
 xₖ = x₀ + Vₖ yₖ

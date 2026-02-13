@@ -17,10 +17,7 @@ where
 
 For large systems:
 * matrix inverse, LU / QR / Cholesky factorization, Gaussian elimination are expensive
-
-Matrix–vector products (A·v) are cheap.
-
-So we prefer **iterative methods**.
+* Matrix–vector products (A·v) with iteration are cheap and easier to do in computer.
 
 When A is not SPD, Conjugate Gradient cannot be used.
 **GMRES works for general matrices.**
@@ -30,9 +27,9 @@ When A is not SPD, Conjugate Gradient cannot be used.
 ## Main idea
 
 Instead of find the x, we
-• find xₖ that **makes the residual norm small enough** by iteration
+* find xₖ that **makes the residual norm small enough** by iteration
 
-Each iteration:
+In Each iteration:
 
 1. add one new direction
 2. project A to a small matrix

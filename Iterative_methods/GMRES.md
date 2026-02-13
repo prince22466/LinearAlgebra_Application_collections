@@ -21,7 +21,7 @@ For large systems:
 
 When A is not SPD, Conjugate Gradient cannot be used.
 **GMRES works for general matrices.**
-GMRES relys heavily on ***Arnold Decomposition*** which is to project a large matrix(high dim) to smaller ones(low dim), check out more about Arnold Decomposition [here](https://en.wikipedia.org/wiki/Arnoldi_iteration "Arnoldi method explanation")
+GMRES relys heavily on ***Arnold Decomposition*** which is to project a large matrix(high dim) to smaller ones(low dim), check out more about Arnold Decomposition ***[here](https://en.wikipedia.org/wiki/Arnoldi_iteration "Arnoldi method explanation")***
 
 ---
 

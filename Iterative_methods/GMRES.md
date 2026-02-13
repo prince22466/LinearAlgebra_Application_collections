@@ -29,6 +29,10 @@ When A is not SPD, Conjugate Gradient cannot be used.
 Instead of find the x, we
 * find xₖ that **makes the residual norm small enough** by iteration
 
+And then How?
+* x(solution) is ℝⁿ, then x = Vₙ Yₙ, Vₙ is a span of ℝⁿ, each vectos in Vₙ are orthognormal to each other, Yₙ is a vector of n scalers.
+* x can be represented as a linear combination of orthognormal vectors(v₁, v₂, ⋯, vₙ) in Vₙ, x = y₁v₁ + y₂v₂ + ⋯ + yₙvₙ.
+* 
 In Each iteration:
 
 1. add one new direction

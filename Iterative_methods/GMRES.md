@@ -36,7 +36,7 @@ And then How?
 * given x₀(initial guess , usually zero), x = x₀ + y₁v₁ + y₂v₂ + ⋯ + yₙvₙ . It seems starting from x₀ and then adding orthognormal vectors , we can finally reach x from x₀ .
 * then comes the iteration formular xₖ = x₀ + Vₖ Yₖ , where Vₖ has k orthognormal vectors , Yₖ is a vector k scalers.
 * hence we can represent rₖ = b − A xₖ => rₖ = r₀ − A Vₖ Yₖ , r₀ = b - A x₀ .
-* with ***Arnold Decomposition*** , rₖ = r₀ − Vₖ₊₁ Hₖ₊₁,ₖ Yₖ, A is gone , Hₖ₊₁, ₖ is Hessenberg matrix with size (k+1)xk.
+* with ***Arnold Decomposition*** , rₖ = r₀ − Vₖ₊₁ Hₖ₊₁,ₖ Yₖ, A is gone , Hₖ₊₁,ₖ is Hessenberg matrix with size (k+1)xk.
 * if we set up v₁ = r₀ / β , β = ∥r₀∥ , then v₁ = e₁ Vₖ₊₁ , where e₁ is [1,0,0,0...] .
 * then rₖ = β e₁ Vₖ₊₁ − Vₖ₊₁ Hₖ₊₁,ₖ yₖ =  Vₖ₊₁ (β e₁ - Hₖ₊₁,ₖ Yₖ) , further, ∥rₖ∥ = ∥β e₁ - Hₖ₊₁,ₖ yₖ∥ , because ∥Vₖ₊₁∥ =1 .
 * so Now, we need to find k(much smaller than n) and xₖ , that make ∥rₖ∥=  small enough

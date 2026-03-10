@@ -17,5 +17,6 @@ If { p₁, p₂, p₃ } is linearly independent, then
 
 
 ## Determinant vs Condition Number
-Determinant (A): The product of all eigenvalues (v1, v2, .....). It tells you the total -dimensional volume.  
+Determinant (A): The product of all eigenvalues (v1, v2, .....). It tells you the total -dimensional volume.
+
 Condition Number (A): The ratio of the largest to smallest eigenvalues (vmax, vmin). It tells you how "stretched" or "squashed" the matrix is in a specific direction. The larger the Condition Number, the closer the matrix is to Singularity.

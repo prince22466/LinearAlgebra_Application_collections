@@ -1,4 +1,4 @@
-# General LA is for quick mental model when seeing some matrix;  
+# General LA is for quick mental model when seeing some matrix  
 things like,   
 what leads to what, what is the practical usage,   
 what it implies in theory and numerical implementation,  

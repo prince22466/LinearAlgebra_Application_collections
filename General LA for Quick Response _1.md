@@ -9,9 +9,9 @@ ________________________________________________________________________________
 
 A = [A₁, A₂], b = [k, v]ᵀ
 
-A₁, A₂ are vectos; k, v are scalers.
+A₁, A₂ are vectors; k, v are scalers.
 
-Ab = [kA₁ + vA₂]ᵀ
+Ab = kA₁ + vA₂
 
 A = [A₁, A₂], B = [B₁, B₂]
 

@@ -7,16 +7,16 @@ how it is connected to large scale optimization, etc
 ____________________________________________________________________________________
 ## Linear dependency, Singularity, Determinant, Linear transformation
 
-For matrix A,
+For matrix A with ℝⁿˣⁿ,
 
 rows linear dependent  
 ⇔ singular  
 ⇔ det(A) = 0  
-⇔ row rank(A) < ??
+⇔ row rank(A) < n
 
 rank = row number → non-singular, otherwise singular.
 
-If matrix A is singular, for Ab = C with b as a vector, the linear transformation effect of A on b is to reduce the richness of b.
+If matrix A is singular, for C = Ab with A is square and b as a vector, C can only occupy a lower-dimensional subspace because rank(A) < n(the linear transformation effect of A on b is to reduce the richness of b).
 
 If A is non-singular, all possible values of C will make up a 2d surface.
 
@@ -28,7 +28,7 @@ If A is singular,
 
 det(AB) = 0
 
-Row operations preserve singularity characteristics of matrix.
+Row operations preserve non or singularity characteristics of matrix.
 ____________________________________________________________________________________
 ## Independent p ⇔ Independent A p
 

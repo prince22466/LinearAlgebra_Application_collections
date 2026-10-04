@@ -18,7 +18,7 @@ No one wants to do A decomposition (e.g., Cholesky decomposition)
 No one wants to do Gussian Elimination (complicated).
 Only doing matrix–vector products is much easier, if possible.
 
-Iterative methods such as **Conjugate Gradient (CG)** exploit the SPD structure of A to achieve fast convergence with low memory usage.  
+Iterative methods such as **Conjugate Gradient (CG)** exploit the **SPD** structure of A to achieve fast convergence with low memory usage.  
 
 ## Main idea
 The idea is to take away a component p from r in each iteration, here p is a vector, r is residual (r = b - A x). And finally iteration stops when ‖r‖² (aka, rᵀr) become 0 or reach certain criterion.  

@@ -5,7 +5,20 @@ what it implies in theory and numerical implementation,
 how it is connected to large scale optimization, etc
 
 ____________________________________________________________________________________
+## Linear dependency, Singularity, Determinant, Linear transformation
+for matrix A, 
+rows linear dependent <-> singular <-> det(A) = 0 <-> row rank(A) < ??  
+rank = row number -> non-singular, otherwise singular.  
 
+if matrix A is singular, for  Ab = C with b as a vector,
+  the linear transformation effect of A on b is reducing the richness of b.
+if A is non-singular, all possible values of C will make up a 2d surface.
+
+
+det(AB)=det(A)*det(B)=>det(A^2) = (det(A))^2, and so on. if A is singular, then det(AB) = 0
+
+row operations preserve singularity characteristics of matrx.
+____________________________________________________________________________________
 ## Independent p ⇔ Independent A p
 
 Let p₁, p₂, p₃ ∈ ℝ³ be linearly independent vectors, aka

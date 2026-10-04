@@ -28,7 +28,7 @@ If A is singular,
 
 det(AB) = 0
 
-Row operations preserve non or singularity characteristics of matrix.
+Row operations preserve singularity(or nonsingularity) characteristics of matrix.
 ____________________________________________________________________________________
 ## Independent p ⇔ Independent A p
 

@@ -16,11 +16,10 @@ If { p₁, p₂, p₃ } is linearly independent, then
 
 { A p₁, A p₂, A p₃ } is also linearly independent if A is invertible. And vice versa.
 
-
+________________________________________________________________________________________________
 ## orthogonal vectors => Independent vectors, but not in reverse
 
-
-
+________________________________________________________________________________________________
 ## Determinant vs Condition Number
 Determinant (A): The product of all eigenvalues (v1, v2, .....). It tells you the total -dimensional volume.
 

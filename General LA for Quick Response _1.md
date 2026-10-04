@@ -5,6 +5,13 @@ what it implies in theory and numerical implementation,
 how it is connected to large scale optimization, etc
 
 ____________________________________________________________________________________
+## Representation of Ab, and AB matrix-vector, matrix-matrix multiplication
+A = [A1, A2], b = [k,v]T, A1, A2 are vectos, k,v are scalers
+Ab = [kA1 + vA2]T
+
+A = [A1, A2], B = [B1,B2], A1, A2, B1, B2 are vectos
+AB = [AB1, AB2]
+____________________________________________________________________________________
 ## Linear dependency, Singularity, Determinant, Linear transformation
 
 For matrix A with ℝⁿˣⁿ,

@@ -1,5 +1,10 @@
-General LA 1
+# General LA is for quick mental model when seeing some matrix;  
+things like,   
+what leads to what, what is the practical usage,   
+what it implies in theory and numerical implementation,  
+how it is connected to large scale optimization, etc
 
+____________________________________________________________________________________
 
 ## Independent p ⇔ Independent Ap
 Let p₁, p₂, p₃ ∈ ℝ³ be linearly independent vectors.

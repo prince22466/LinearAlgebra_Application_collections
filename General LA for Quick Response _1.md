@@ -18,7 +18,7 @@ rank = row number → non-singular, otherwise singular.
 
 If matrix A is singular, for C = Ab with A is square and b as a vector, C can only occupy a lower-dimensional subspace because rank(A) < n(the linear transformation effect of A on b is to reduce the richness of b).
 
-If A is non-singular, all possible values of C will make up a 2d surface.
+If A is non-singular, all possible values of C will make up the whole 2D plane.
 
 det(AB) = det(A) · det(B)
 

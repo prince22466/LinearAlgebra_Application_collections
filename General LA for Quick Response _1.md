@@ -42,6 +42,13 @@ c₁p₁ᵀp₁ + c₂p₁ᵀp₂ + c₃p₁ᵀp₃ = 0
 ⇒ c₁ = 0
 
 Same can be shown for c₂ and c₃, thus p₁, p₂, p₃ are independent.
+
+the counter case for the reverse,
+For example,
+p₁ = [1, 0], p₂ = [1, 1]
+are linearly independent, but
+p₂ᵀp₁ = 1 ≠ 0,
+so they are not orthogonal.
 ________________________________________________________________________________________________
 ## Determinant vs Condition Number
 Determinant (A): The product of all eigenvalues (v1, v2, .....). It tells you the total -dimensional volume.

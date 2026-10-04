@@ -22,7 +22,12 @@ thus,
 
 ________________________________________________________________________________________________
 ## orthogonal vectors => Independent vectors, but not in reverse
-
+orthogonal means p1Tp2 = 0, independency means c1p1 + c2p2 + c3p3 = 0 only with c1=c2=c3=0.
+given p1Tp2 = 0, and c1p1 + c2p2 + c3p3 = 0,
+c1 p1Tp1 + c2 p1Tp2 + c3 p1Tp3 = 0
+=> c1 + c2 0 + c3 0 = 0
+=> c1 = 0
+same can be shown for c2 and c3, thus p1, p2 ,p3 are independent
 ________________________________________________________________________________________________
 ## Determinant vs Condition Number
 Determinant (A): The product of all eigenvalues (v1, v2, .....). It tells you the total -dimensional volume.

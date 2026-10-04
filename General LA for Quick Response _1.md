@@ -27,13 +27,21 @@ thus,
 Ap₁, Ap₂, Ap₃ is also linearly independent if A is invertible. And vice versa.
 
 ________________________________________________________________________________________________
-## orthogonal vectors => Independent vectors, but not in reverse
-orthogonal means p1Tp2 = 0, independency means c1p1 + c2p2 + c3p3 = 0 only with c1=c2=c3=0.
-given p1Tp2 = 0, and c1p1 + c2p2 + c3p3 = 0,
-c1 p1Tp1 + c2 p1Tp2 + c3 p1Tp3 = 0
-=> c1 + c2 0 + c3 0 = 0
-=> c1 = 0
-same can be shown for c2 and c3, thus p1, p2 ,p3 are independent
+## Orthogonal vectors ⇒ Independent vectors, but not in reverse
+
+Orthogonal means p₁ᵀp₂ = 0.
+
+Independency means c₁p₁ + c₂p₂ + c₃p₃ = 0 only when c₁ = c₂ = c₃ = 0.
+
+Given p₁ᵀp₂ = 0 (orthogonal), and c₁p₁ + c₂p₂ + c₃p₃ = 0,
+
+c₁p₁ᵀp₁ + c₂p₁ᵀp₂ + c₃p₁ᵀp₃ = 0
+
+⇒ c₁ + c₂·0 + c₃·0 = 0
+
+⇒ c₁ = 0
+
+Same can be shown for c₂ and c₃, thus p₁, p₂, p₃ are independent.
 ________________________________________________________________________________________________
 ## Determinant vs Condition Number
 Determinant (A): The product of all eigenvalues (v1, v2, .....). It tells you the total -dimensional volume.

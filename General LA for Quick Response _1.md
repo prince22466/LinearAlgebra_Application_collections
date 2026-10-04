@@ -37,7 +37,7 @@ Given p₁ᵀp₂ = 0 (orthogonal), and c₁p₁ + c₂p₂ + c₃p₃ = 0,
 
 c₁p₁ᵀp₁ + c₂p₁ᵀp₂ + c₃p₁ᵀp₃ = 0
 
-⇒ c₁ + c₂·0 + c₃·0 = 0
+⇒ c₁‖p₁‖² + c₂·0 + c₃·0 = 0
 
 ⇒ c₁ = 0
 

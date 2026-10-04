@@ -6,41 +6,25 @@ how it is connected to large scale optimization, etc
 
 ____________________________________________________________________________________
 
-## Independent \(p\) ⇔ Independent \(A p\)
+## Independent p ⇔ Independent A p
 
-Let \(p_1, p_2, p_3 \in \mathbb{R}^3\) be linearly independent vectors, aka
+Let p₁, p₂, p₃ ∈ ℝ³ be linearly independent vectors, aka
 
-\[
-c_1p_1 + c_2p_2 + c_3p_3 = 0,
-\]
+c₁p₁ + c₂p₂ + c₃p₃ = 0, only when c₁ = c₂ = c₃ = 0.
 
-where
+Assume A ∈ ℝ³ˣ³ is invertible.
 
-\[
-c_1 = c_2 = c_3 = 0.
-\]
+Claim:
 
-Assume \(A \in \mathbb{R}^{3 \times 3}\) is invertible.
+If p₁, p₂, p₃ is linearly independent, then
 
-**Claim:**
+c₁Ap₁ + c₂Ap₂ + c₃Ap₃  
+= A(c₁p₁ + c₂p₂ + c₃p₃)  
+= 0
 
-If \(\{p_1, p_2, p_3\}\) is linearly independent, then
+thus,
 
-\[
-\begin{aligned}
-c_1Ap_1 + c_2Ap_2 + c_3Ap_3
-&= A(c_1p_1 + c_2p_2 + c_3p_3) \\
-&= 0.
-\end{aligned}
-\]
-
-Thus,
-
-\[
-\{Ap_1, Ap_2, Ap_3\}
-\]
-
-is also linearly independent if \(A\) is invertible. And vice versa.
+Ap₁, Ap₂, Ap₃ is also linearly independent if A is invertible. And vice versa.
 
 ________________________________________________________________________________________________
 ## orthogonal vectors => Independent vectors, but not in reverse

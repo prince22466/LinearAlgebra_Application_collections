@@ -6,18 +6,29 @@ how it is connected to large scale optimization, etc
 
 ____________________________________________________________________________________
 ## Linear dependency, Singularity, Determinant, Linear transformation
-for matrix A, 
-rows linear dependent <-> singular <-> det(A) = 0 <-> row rank(A) < ??  
-rank = row number -> non-singular, otherwise singular.  
 
-if matrix A is singular, for  Ab = C with b as a vector,
-  the linear transformation effect of A on b is reducing the richness of b.
-if A is non-singular, all possible values of C will make up a 2d surface.
+For matrix A,
 
+rows linear dependent  
+⇔ singular  
+⇔ det(A) = 0  
+⇔ row rank(A) < ??
 
-det(AB)=det(A)*det(B)=>det(A^2) = (det(A))^2, and so on. if A is singular, then det(AB) = 0
+rank = row number → non-singular, otherwise singular.
 
-row operations preserve singularity characteristics of matrx.
+If matrix A is singular, for Ab = C with b as a vector, the linear transformation effect of A on b is to reduce the richness of b.
+
+If A is non-singular, all possible values of C will make up a 2d surface.
+
+det(AB) = det(A) · det(B)
+
+⇒ det(A²) = (det(A))², and so on.
+
+If A is singular,
+
+det(AB) = 0
+
+Row operations preserve singularity characteristics of matrix.
 ____________________________________________________________________________________
 ## Independent p ⇔ Independent A p
 
